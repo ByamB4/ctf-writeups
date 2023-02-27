@@ -419,3 +419,4 @@ for _ in dic:
 
 After some time I did see some recognizable character then tried padding , removing some bytes image became kind of readable (lucky me). `ACSC{1tW@sE@syW@snt?}`
 
+![image-hardware.png](https://github.com/ByamB4/ctf-writeups/blob/main/acsc-2023/static/hardware.png)
