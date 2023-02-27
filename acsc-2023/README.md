@@ -69,7 +69,7 @@ the_flag_is_working_or_the_challenge_is_broken_btw_i_don't_like_forensics_too
 
 ## `rev/serverless`
 
-It was most interesting challenge. I thought easy js one but in the it was pretty hard. So we are given obfuscated js code and encrypted flag text with **acscpass** pasword. 
+It was most interesting challenge. I thought easy js one but in the end it was pretty hard. So we are given obfuscated js code and encrypted flag text with **acscpass** pasword. 
 At first i tried [jsnice](http://jsnice.org/) but it gives some error, but it’s very understandable and can be prettify by hand.
 
 ```js
@@ -308,7 +308,7 @@ io.interactive()
 
 ## `rev/ngo`
 
-At first I thought just have to patch that **Sleep()** with another argument then it will just prints whole flag. But there's a lot more to it. It generates random number using [Linear-feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) then it xors be careful with `v4` value it have to `uint64` or it will print wrong bytes. Final solve script
+At first I thought just have to patch that **Sleep()** with another argument then it will just prints whole flag. But there's a lot more to it. It generates random number using [Linear-feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) then it doing xor. Be careful with `v4` value it have to `uint64` or it will print wrong bytes. Final solve script
 
 ```c
 #include <stdio.h>
@@ -352,7 +352,7 @@ int main()
 
 ## `hardware/not so hard`
 
-I didn’t know much about SD card and **SPI mode** thing. Maybe I’m the only one doing it just bare hand. So interesting part was communcation between sd card to device.
+I don’t know much about SD card and **SPI mode** thing. Maybe I’m the only one doing it just bare hand. So interesting part was communcation between sd card to device.
 
 ```
 Device to SD Card : 510000000055
